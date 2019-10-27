@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvNama"
+        android:layout_margin="10dp"
+        android:id="@+id/tvNama"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNama"
+        android:layout_margin="10dp"
+        android:id="@+id/etNama"
+        android:inputType="none"
+        tools:ignore="Autofill,LabelFor" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNama"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/BtnTampilNama"
+        android:id="@+id/BtTampil"
+        android:onClick="TampilNama"
+        tools:ignore="OnClick" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Label2"
+        android:textSize="20sp"
+        android:layout_below="@+id/BtTampil"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="5dp"
+        tools:ignore="UnknownId" />
+
+</RelativeLayout>
